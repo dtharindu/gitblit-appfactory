@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Gitblit</title>
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="./gitblit.css"/>
+		<link rel="shortcut icon" type="image/png" href="./gitblt-favicon.png" />
+		<meta name="ROBOTS" content="INDEX, NOFOLLOW">
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="keywords" content="java git server" />
+
+		<script type="text/javascript" src="./bootstrap/js/jquery.js"></script>
+		<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+		
+		<script type="text/javascript" src="prettify/prettify.js"></script>
+		<link href="prettify/prettify.css" type="text/css" rel="stylesheet" />		
+	</head>
+	<body onload="prettyPrint()">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="http://gitblit.com" title="gitblit homepage">
+						<img src="gitblt_25_white.png" width="79" height="25" alt="gitblit" class="logo"/>
+					</a>
+					<ul class="nav">
+						<li><a href='index.html'>overview</a></li><li><a href='features.html'>features</a></li><li><a href='setup.html'>setup</a></li><li><a href='federation.html'>federation</a></li><li><a href='rpc.html'>rpc</a></li><li><a href='faq.html'>faq</a></li><li><a href='properties.html'>settings</a></li><li><a href='design.html'>design</a></li><li class='active'><a href='roadmap.html'>roadmap</a></		
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="markdown">
+<h2> Roadmap</h2>
+
+<p>This is not exactly a formal roadmap but it is a priority list of what might be implemented in future releases.<br/>
+This list is volatile.</p>
+
+<h3> TODO (high priority)</h3>
+
+<ul>
+<li>Eclipse: create plugin to enumerate repositories and delegate cloning to EGit</li>
+<li>Manager: support federation RPCs</li>
+<li>Manager: redesign ref indicators in log, search, and activity views to support multiple local branches, remote branches, and tags</li>
+<li>Gitblit: Serve repositories on root URL rather than /git (investigate JGit 1.2 GitFilter)</li>
+</ul>
+
+<h3> TODO (medium priority)</h3>
+
+<ul>
+<li>Gitblit: editable settings page in GO/WAR</li>
+<li>Gitblit: investigate create-repository-on-push.<ul>
+<li>Maybe a new user role to allow this?</li>
+<li>Maybe a server setting to disable this completely?</li>
+<li>Pusher/Creator becomes repository owner and can then manipulate access lists, etc?</li>
+</ul>
+</li>
+<li>Gitblit: Clone Repository feature (<a href='http://code.google.com/p/gitblit/issues/detail?id=5'>issue 5</a>)<ul>
+<li>optional scheduled pulls</li>
+<li>optional automatic push to origin/remotes?</li>
+<li>optional manual push to origin/remotes?</li>
+</ul>
+</li>
+<li>Gitblit: Repository regex substitutions should be stored in .git/.config, not gitblit.properties</li>
+</ul>
+
+<h3> IDEAS</h3>
+
+<ul>
+<li>Gitblit: Re-use the EGit branch visualization table cell renderer as some sort of servlet</li>
+<li>Gitblit: Support personal repositories (~username/repo)</li>
+<li>Gitblit: diff should highlight inserted/removed fragment compared to original line</li>
+<li>Gitblit: implement branch permission controls as Groovy pre-receive script.<br/>
+<em>Maintain permissions text file similar to a gitolite configuration file or svn authz file.</em></li>
+<li>Gitblit: consider user-subscribed email notifications for a repository branch.</li>
+<li>Gitblit: aggregate RSS feeds by tag or subfolder</li>
+<li>Gitblit: Consider creating more Git model objects and exposing them via the JSON RPC interface to allow inspection/retrieval of Git commits, Git trees, etc from Gitblit.</li>
+<li>Gitblit: Blame coloring by author (<a href='http://code.google.com/p/gitblit/issues/detail?id=2'>issue 2</a>)</li>
+<li>Gitblit: View binary files in blob page (<a href='http://code.google.com/p/gitblit/issues/detail?id=6'>issue 6</a>)</li>
+</ul>		</div> <!-- markdown -->
+		<footer>
+			<p class="pull-right">generated 2012-10-15</p>
+		The content of this page is licensed under the <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 License</a>.
+		</footer>			
+	</div> <!-- container -->	
+</body>
+</html>
